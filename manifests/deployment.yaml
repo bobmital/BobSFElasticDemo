@@ -1,0 +1,24 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: bobelastic930
+  labels:
+    app: bobelastic930
+    kubernetes.azure.com/generator: devhub
+  namespace: namespace-workflow-1727726117264
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: bobelastic930
+  template:
+    metadata:
+      labels:
+        app: bobelastic930
+    spec:
+      containers:
+        - name: bobelastic930
+          image: acrworkflow1727726117264.azurecr.io/image-workflow-1727726117264:latest
+          imagePullPolicy: Always
+          ports:
+            - containerPort: 3000

@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: bobelastic930
+  namespace: namespace-workflow-1727726117264
+  labels:
+    kubernetes.azure.com/generator: devhub
+spec:
+  type: LoadBalancer
+  selector:
+    app: bobelastic930
+  ports:
+    - protocol: TCP
+      port: 3000
+      targetPort: 3000
