@@ -1,4 +1,4 @@
-# Elasticsearch and Azure OpenAI Integration Demo with NYC Parks Events
+# Elasticsearch and Azure OpenAI Integration Demo with SF Movie data
 
 This project is a demonstration of the "On Your Data" integration between Elasticsearch and Azure OpenAI. It uses historical data from events happening in NYC parks to showcase the capabilities of this integration.
 
